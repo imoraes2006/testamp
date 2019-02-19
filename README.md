@@ -6,6 +6,10 @@ Create an AMP page for an Audible page that is anon (no customer data being shar
 (b)	develop a page that is responsive (our web site is adaptive not responsive) and learn from it
 (c)	explore the CSS and JS used on our page in order to reduce extraneous code (third party JS and tags are not permitted in AMP)
 
+TO DO
+Add amp-analytics tag
+Add more features to make it closer to original non-AMP page
+
 Reference:
 https://www.ampproject.org/
 https://www.ampproject.org/docs/
