@@ -1,0 +1,1436 @@
+  <!doctype html>
+  <html lang="en" ⚡>
+    <head>
+    <!--
+     __        __                      _     _      _
+     \ \      / /__    __ _ _ __ ___  | |__ (_)_ __(_)_ __   __ _
+      \ \ /\ / / _ \  / _` | '__/ _ \ | '_ \| | '__| | '_ \ / _` |
+       \ V  V /  __/ | (_| | | |  __/ | | | | | |  | | | | | (_| |
+        \_/\_/ \___|  \__,_|_|  \___| |_| |_|_|_|  |_|_| |_|\__, |
+                                                            |___/
+    Do you want to join us?
+    https://amazon.jobs/en/teams/audible
+     --->
+    <meta charset="utf-8">
+    <title>amp-fx-flying-carpet</title>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script> 
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <meta name="Description" content="Audible Theater">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="https://ampbyexample.com/components/amp-fx-flying-carpet/">
+    <style amp-custom>
+    html {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    *,:after,:before {
+        -moz-box-sizing: inherit;
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit
+    }
+
+    body {
+        min-height: 100%;
+        padding: 0;
+        margin: 0
+    }
+
+    article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
+        display: block
+    }
+
+    audio,canvas,video {
+        display: inline-block;
+        display: inline;
+    zoom:1}
+
+    audio:not([controls]) {
+        display: none
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic
+}
+
+button,input,select,textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle
+}
+
+button,input {
+    overflow: visible;
+    line-height: normal
+}
+
+button,input[type=button],input[type=reset],input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+input[type=search],input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+.bc-pub-block {
+    display: block
+}
+
+.bc-pub-hidden {
+    display: none
+}
+
+.bc-pub-overflow-hidden {
+    overflow: hidden
+}
+
+.bc-pub-clearfix:after,.bc-pub-clearfix:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.bc-pub-relative {
+    position: relative
+}
+
+.bc-pub-float-right {
+    float: right
+}
+
+.bc-pub-float-left {
+    float: left
+}
+
+.bc-color-base {
+    color: #1a1c1d
+}
+
+.bc-color-secondary {
+    color: rgba(26,28,29,.65)
+}
+
+.bc-color-tertiary {
+    color: rgba(26,28,29,.35)
+}
+
+.bc-color-link {
+    color: #007eb0
+}
+
+.bc-color-background-base {
+    background-color: #fff
+}
+
+.bc-color-background-secondary {
+    background-color: #f6f7f7
+}
+
+.bc-color-background-active,.bc-switch-row .bc-switch-input:checked+.bc-switch {
+    background-color: #00b0b0
+}
+
+.bc-color-divider-base,.bc-divider {
+    border-color: #cdcdcd
+}
+
+.bc-color-border-base {
+    border-color: #cdcdcd
+}
+
+.bc-palette-inverse .bc-color-base {
+    color: #fff
+}
+
+.bc-palette-inverse .bc-color-secondary {
+    color: rgba(255,255,255,.65)
+}
+
+.bc-palette-inverse .bc-color-link {
+    color: #fff
+}
+
+.bc-palette-inverse .bc-color-background-base {
+    background-color: #1a1c1d
+}
+
+.bc-palette-inverse .bc-color-background-secondary {
+    background-color: #212325
+}
+
+.bc-palette-inverse .bc-color-background-active,.bc-palette-inverse .bc-switch-row .bc-switch-input:checked+.bc-switch,.bc-switch-row .bc-palette-inverse .bc-switch-input:checked+.bc-switch {
+    background-color: #00b0b0
+}
+
+.bc-row-responsive {
+    margin-left: -8px;
+    margin-right: -8px
+}
+
+.bc-row-responsive:after,.bc-row-responsive:before {
+    content: " ";
+    display: table
+}
+
+.bc-row-responsive:after {
+    clear: both
+}
+
+.bc-row-responsive .bc-col-responsive {
+    position: relative;
+    min-height: 2px;
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.bc-row-responsive .bc-col-1,.bc-row-responsive .bc-col-10,.bc-row-responsive .bc-col-11,.bc-row-responsive .bc-col-12,.bc-row-responsive .bc-col-2,.bc-row-responsive .bc-col-3,.bc-row-responsive .bc-col-4,.bc-row-responsive .bc-col-5,.bc-row-responsive .bc-col-6,.bc-row-responsive .bc-col-7,.bc-row-responsive .bc-col-8,.bc-row-responsive .bc-col-9 {
+    float: left
+}
+
+.bc-row-responsive .bc-col-2 {
+    width: 16.66667%
+}
+
+.bc-row-responsive .bc-col-3 {
+    width: 25%
+}
+
+.bc-row-responsive .bc-col-9 {
+    width: 75%
+}
+
+.bc-row-responsive .bc-col-10 {
+    width: 83.33333%
+}
+
+.bc-row-responsive .bc-col-12 {
+    width: 100%
+}
+
+.bc-row-responsive .bc-col-offset-0 {
+    margin-left: 0
+}
+
+.bc-row-responsive .bc-col-offset-5 {
+    margin-left: 41.66667%
+}
+
+.bc-pub-block {
+    display: block
+}
+
+.bc-pub-hidden {
+    display: none
+}
+
+.bc-pub-overflow-hidden {
+    overflow: hidden
+}
+
+.bc-pub-clearfix:after,.bc-pub-clearfix:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.bc-pub-relative {
+    position: relative
+}
+
+.bc-pub-float-right {
+    float: right
+}
+
+.bc-pub-float-left {
+    float: left
+}
+
+.bc-autocomplete-suggestions-wrapper {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10000
+}
+
+.bc-autocomplete.bc-autocomplete-has-icon {
+    position: relative
+}
+
+.bc-autocomplete.bc-autocomplete-has-icon .bc-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 12px 0 8px;
+    width: auto;
+    line-height: 40px;
+    height: 100%;
+    cursor: pointer
+}
+
+.bc-autocomplete.bc-autocomplete-has-icon .bc-input {
+    padding-right: 36px;
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+
+.bc-container {
+    margin: 0 auto;
+    max-width: 1020px;
+    padding: 0 10px;
+    width: 100%
+}
+
+.bc-container:after {
+    content: ' ';
+    display: table
+}
+
+.mobile .bc-container {
+    padding: 0 15px;
+    max-width: 100%
+}
+
+.bc-section {
+    clear: both;
+    overflow: visible
+}
+
+.bc-spacing-none {
+    margin-bottom: 0
+}
+
+.bc-spacing-top-none {
+    margin-top: 0
+}
+
+.bc-spacing-mini {
+    margin-bottom: 10px
+}
+
+.bc-spacing-top-mini {
+    margin-top: 10px
+}
+
+.bc-spacing-small {
+    margin-bottom: 15px
+}
+
+.bc-spacing-top-small {
+    margin-top: 15px
+}
+
+.bc-spacing-base {
+    margin-bottom: 20px
+}
+
+.bc-spacing-top-base {
+    margin-top: 20px
+}
+
+.bc-spacing-medium {
+    margin-bottom: 30px
+}
+
+.bc-spacing-top-large {
+    margin-top: 50px
+}
+
+.mobile .bc-spacing-none {
+    margin-bottom: 0
+}
+
+.mobile .bc-spacing-top-none {
+    margin-top: 0
+}
+
+.mobile .bc-spacing-mini {
+    margin-bottom: 10px
+}
+
+.mobile .bc-spacing-top-mini {
+    margin-top: 10px
+}
+
+.mobile .bc-spacing-small {
+    margin-bottom: 15px
+}
+
+.mobile .bc-spacing-top-small {
+    margin-top: 15px
+}
+
+.mobile .bc-spacing-base {
+    margin-bottom: 20px
+}
+
+.mobile .bc-spacing-top-base {
+    margin-top: 20px
+}
+
+.mobile .bc-spacing-medium {
+    margin-bottom: 25px
+}
+
+.mobile .bc-spacing-top-large {
+    margin-top: 30px
+}
+
+.bc-box-padding-none {
+    padding: 0
+}
+
+.bc-box-padding-mini {
+    padding: 10px
+}
+
+.bc-box-padding-base {
+    padding: 20px
+}
+
+.mobile .bc-box-padding-none {
+    padding: 0
+}
+
+.mobile .bc-box-padding-mini {
+    padding: 10px
+}
+
+.mobile .bc-box-padding-base {
+    padding: 20px
+}
+
+#bc-spinner-layout {
+    background: rgba(255,255,255,.8);
+    position: absolute
+}
+
+.bc-range {
+    position: relative
+}
+
+.bc-range-progress {
+    width: 0;
+    height: 5px;
+    background-color: #f7991c;
+    position: absolute;
+    top: 9px;
+    pointer-events: none
+}
+
+.bc-range [type=range] {
+    -webkit-appearance: none;
+    margin: 5.5px 0;
+    width: 100%
+}
+
+.bc-range [type=range]::-webkit-slider-runnable-track {
+    cursor: pointer;
+    height: 5px;
+    transition: all .2s ease;
+    width: 100%;
+    box-shadow: 0 transparent;
+    background: rgba(26,28,29,.25);
+    border: 0 solid 0;
+    border-radius: 0
+}
+
+.bc-range [type=range]::-webkit-slider-thumb {
+    box-shadow: -1px 0 2px 0 rgba(0,0,0,.5);
+    background: #f7991c;
+    border: 0 solid #f7991c;
+    border-radius: 11px;
+    cursor: pointer;
+    height: 11px;
+    width: 11px;
+    -webkit-appearance: none;
+    margin-top: -3px
+}
+
+.bc-video {
+    display: block;
+    position: relative;
+    background-color: #000;
+    overflow-y: hidden;
+    z-index: 300;
+    min-width: 190px
+}
+
+.bc-video video {
+    display: block
+}
+
+.bc-video .bc-video-btn {
+    background: 0 0;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    border: 0
+}
+
+.bc-video .bc-video-btn-play {
+    margin-left: 3px;
+    margin-right: 2px;
+    display: inline-block
+}
+
+.bc-video .bc-video-btn-fullscreen {
+    margin-left: 10px
+}
+
+.bc-video .bc-video-volume {
+    transition-duration: .5s;
+    transform: rotate(-90deg);
+    width: 40px;
+    position: absolute;
+    left: -1px;
+    bottom: 36px;
+    display: block;
+    opacity: 0
+}
+
+.bc-video .bc-video-volume-tools {
+    display: inline-block;
+    position: relative
+}
+
+.bc-video .bc-video-btn-volume {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.bc-video .bc-video-slider {
+    display: inline-block;
+    z-index: 500;
+    width: calc(100% - 145px)
+}
+
+.bc-video .bc-video-controls {
+    transition-duration: .5s;
+    bottom: -45px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: 310;
+    opacity: 0
+}
+
+.bc-video .bc-video-controls .bc-range-progress {
+    top: 8.5px
+}
+
+.bc-video .bc-video-poster {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 311;
+    vertical-align: middle;
+    background-position: 50% 50%;
+    cursor: pointer
+}
+
+.bc-video .video-player-button {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 312
+}
+
+.bc-video .video-player-button .poster-icon {
+    width: 48px;
+    font-size: 48px;
+    line-height: 1;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.65)
+}
+
+.mobile .bc-video .video-player-button {
+    bottom: 10px;
+    left: 10px
+}
+
+.mobile .bc-video .video-player-button .poster-icon {
+    width: 24px;
+    font-size: 24px
+}
+
+.bc-icon {
+    display: inline-block;
+    font-family: brickcity-icons;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    vertical-align: middle;
+    width: 16px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.bc-icon.bc-icon-size-medium {
+    font-size: 24px;
+    width: 24px
+}
+
+.bc-icon-chevron-right:before {
+    content: "\e610"
+}
+
+.bc-icon-hamburger:before {
+    content: "\e61f"
+}
+
+.bc-icon-play:before {
+    content: "\e62b"
+}
+
+.bc-icon-search:before {
+    content: "\e62f"
+}
+
+.bc-icon-volume-high:before {
+    content: "\e644"
+}
+
+.bc-icon-maximize-screen:before {
+    content: "\e649"
+}
+
+.bc-clearfix,.clearfix {
+    zoom:1}
+
+
+
+.bc-clearfix:after,.bc-clearfix:before,.clearfix:after,.clearfix:before {
+    display: table;
+    content: "";
+    line-height: 0;
+    font-size: 0
+}
+
+.bc-clearfix:after,.clearfix:after {
+    clear: both
+}
+
+.bc-hidden,.bc-overlay {
+    display: none;
+    visibility: hidden
+}
+
+.bc-divider {
+    border-top-width: 1px;
+    border-top-style: solid;
+    display: block
+}
+
+.bc-pipe {
+    display: inline-block;
+    height: 14px;
+    vertical-align: middle;
+    width: 1px
+}
+
+.bc-pipe.bc-letter-space-base {
+    margin: 0 10px
+}
+
+
+.bc-mask,.bc-overlay {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/01/audibleweb/brickcity/1.0/mask._V298585148_.png)
+}
+
+.bc-row {
+    width: 100%
+}
+
+.bc-row:after,.bc-row:before {
+    clear: both;
+    display: table;
+    content: ""
+}
+
+.bc-col {
+    margin-right: 2%;
+    float: left;
+    min-height: 1px;
+    overflow: visible
+}
+
+.bc-col.bc-col-last {
+    margin-right: 0;
+    float: right
+}
+
+.bc-col.bc-col-1 {
+    width: 6.448%
+}
+
+.bc-col.bc-col-2 {
+    width: 14.948%
+}
+
+
+.bc-col.bc-col-10 {
+    width: 82.948%
+}
+
+.bc-col.bc-col-12 {
+    width: 100%;
+    margin-right: 0
+}
+
+.bc-list {
+    padding: 0;
+    margin: 0 0 0 19px
+}
+
+.bc-list-nostyle {
+    margin-left: 0
+}
+
+.bc-list-nostyle li {
+    list-style: none
+}
+
+.bc-container {
+    margin: 0 auto;
+    max-width: 1020px;
+    padding: 0 10px;
+    width: 100%
+}
+
+.bc-container:after {
+    content: ' ';
+    display: table
+}
+
+.bc-no-container>.bc-container {
+    max-width: none;
+    padding: none
+}
+
+.desktop .bc-container {
+    min-width: 1020px
+}
+
+.mobile .bc-container {
+    padding: 0 15px;
+    max-width: 100%
+}
+
+.bc-section {
+    clear: both;
+    overflow: visible
+}
+
+.bc-spacing-none {
+    margin-bottom: 0
+}
+
+.bc-spacing-top-none {
+    margin-top: 0
+}
+
+.bc-spacing-mini {
+    margin-bottom: 10px
+}
+
+.bc-spacing-top-mini {
+    margin-top: 10px
+}
+
+.bc-spacing-small {
+    margin-bottom: 15px
+}
+
+.bc-spacing-top-small {
+    margin-top: 15px
+}
+
+.bc-spacing-base {
+    margin-bottom: 20px
+}
+
+.bc-spacing-top-base {
+    margin-top: 20px
+}
+
+.bc-spacing-medium {
+    margin-bottom: 30px
+}
+
+.bc-spacing-top-large {
+    margin-top: 50px
+}
+
+.mobile .bc-spacing-none {
+    margin-bottom: 0
+}
+
+.mobile .bc-spacing-top-none {
+    margin-top: 0
+}
+
+.mobile .bc-spacing-mini {
+    margin-bottom: 10px
+}
+
+.mobile .bc-spacing-top-mini {
+    margin-top: 10px
+}
+
+.mobile .bc-spacing-small {
+    margin-bottom: 15px
+}
+
+.mobile .bc-spacing-top-small {
+    margin-top: 15px
+}
+
+.mobile .bc-spacing-base {
+    margin-bottom: 20px
+}
+
+.mobile .bc-spacing-top-base {
+    margin-top: 20px
+}
+
+.mobile .bc-spacing-medium {
+    margin-bottom: 25px
+}
+
+.mobile .bc-spacing-top-large {
+    margin-top: 30px
+}
+
+.bc-box-padding-none {
+    padding: 0
+}
+
+.bc-box-padding-mini {
+    padding: 10px
+}
+
+.bc-box-padding-base {
+    padding: 20px
+}
+
+.mobile .bc-box-padding-none {
+    padding: 0
+}
+
+.mobile .bc-box-padding-mini {
+    padding: 10px
+}
+
+.mobile .bc-box-padding-base {
+    padding: 20px
+}
+
+.bc-color-background-pipe-tertiary {
+    background-color: #aaacae
+}
+
+.bc-input,textarea.bc-input {
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    font-size: 13px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    padding: 0 16px;
+    width: 100%
+}
+
+body,html {
+    color: #212325;
+    background-color: #fff;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.mobile body {
+    font-size: 14px
+}
+
+.bc-focus-mouse {
+    outline: 0
+}
+
+a {
+    color: #007eb0;
+    cursor: pointer;
+    text-decoration: none
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    margin: 0
+}
+
+.bc-size-mini {
+    font-size: 12px;
+    line-height: 18px
+}
+
+.bc-size-small {
+    font-size: 13px;
+    line-height: 19px
+}
+
+.bc-size-base {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.bc-size-large {
+    font-size: 26px;
+    line-height: 34px
+}
+
+.bc-text-secondary.bc-size-mini {
+    font-size: 11px;
+    line-height: 18px
+}
+
+.mobile .bc-text-secondary.bc-size-mini {
+    font-size: 11px;
+    line-height: 18px
+}
+
+.bc-text-secondary.bc-size-small {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.mobile .bc-text-secondary.bc-size-small {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.mobile .bc-size-mini {
+    font-size: 12px;
+    line-height: 18px
+}
+
+.mobile .bc-size-small {
+    font-size: 13px;
+    line-height: 19px
+}
+
+.mobile .bc-size-base {
+    font-size: 14px;
+    line-height: 20px
+}
+
+
+.mobile .bc-size-large {
+    font-size: 20px;
+    line-height: 26px
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 26px
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 20px
+}
+
+h3.bc-text-secondary {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.mobile h2 {
+    font-size: 16px;
+    line-height: 22px
+}
+
+.mobile h3 {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.mobile h3.bc-text-secondary {
+    font-size: 18px;
+    line-height: 24px
+}
+
+
+.bc-text-center {
+    text-align: center
+}
+
+.bc-text-right {
+    text-align: right
+}
+
+.bc-text-secondary {
+    font-family: Georgia,serif
+}
+
+.bc-text-bold {
+    font-weight: 700
+}
+
+.bc-text-capitalize {
+    text-transform: uppercase
+}
+
+.bc-text-emphasis {
+    font-style: italic
+}
+
+.bc-text-nowrap {
+    white-space: nowrap
+}
+
+.bc-text-ellipses {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block
+}
+
+.bc-text-letterspace {
+    letter-spacing: 4px
+}
+
+.bc-box {
+    border: none
+}
+
+.bc-box.bc-box-border {
+    border: 2px solid #ccc
+}
+
+#toast {
+    background: #2D2D2D;
+    border-radius: 1px;
+    min-width: 250px;
+    max-width: 660px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.15);
+    left: 15px;
+    right: 15px;
+    bottom: 30px;
+    z-index: 10003;
+    transition: margin-bottom .5s
+}
+
+.toast-message {
+    color: #fff;
+    display: block;
+    float: left;
+    font-weight: 700;
+    max-width: 85%;
+    overflow: hidden;
+    padding: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.toast-action-message {
+    color: #fff;
+    display: block;
+    float: right;
+    overflow: hidden;
+    padding: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.toast-hide {
+    margin-bottom: -90px
+}
+
+.bc-overlay {
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    z-index: 10001;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+.imm-padding {
+    padding-bottom: 5px
+}
+
+.imm-center {
+    text-align: center
+}
+
+.imm-inline-block {
+    display: inline-block;
+}
+.amp-flying-carpet-text-border {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+.radio-selector [option][selected] {
+  outline: none;
+}
+.radio-selector [option] {
+  display: flex;
+  align-items: center;
+}
+.radio-selector [option]:before {
+  transition: background 0.25s ease-in-out;
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: var(--space-1);
+  border-radius: 100%;
+  border: solid 1px var(--color-primary);
+}
+.radio-selector [option][selected]:before {
+  text-align: center;
+  content: "✓";
+  color: var(--color-text-light);
+  background-color: var(--color-primary);
+}
+.sample-selector, 
+.radio-selector,
+.sample-selector ~ div,
+.radio-selector ~ div {
+  padding: var(--space-2);
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Audible",
+  "url" : "https://www.audible.com",
+  "logo": "https://images-na.ssl-images-amazon.com/images/G/01/audiblemobile/store/image/favicons/icons310px.png",
+
+  "sameAs" : [
+    "https://plus.google.com/+audible", "https://www.facebook.com/audible", "https://twitter.com/audible_com", "https://www.youtube.com/user/AudibleAccess", "https://www.linkedin.com/company/12227", "https://www.instagram.com/audible_com"
+  ],
+
+  "address": {
+    "@type": "PostalAddress",
+
+    "addressCountry": "United States", 
+
+    "addressLocality": "Newark", 
+
+    "addressRegion": "NJ", 
+
+
+    "streetAddress": "One Washington Park",
+
+    "postalCode": "07102"
+  },
+  "telephone": "(973) 820-0400",
+  "contactPoint" : [{
+    "@type" : "ContactPoint",
+    "telephone" : "+1-888-283-5051",
+    "contactType" : "customer service",
+
+    "areaServed" : [
+      "US", "CA"
+    ],
+
+
+    "availableLanguage" : [
+      "English"
+    ],
+
+    "contactOption" : "TollFree"
+  }]
+}
+</script>
+    <meta property="fb:app_id" content="102978293121214" />
+    <meta property="og:site_name" content="Audible.com" />
+    <meta property="og:type" content="book" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://m.media-amazon.com/images/G/01/Audible/en_US/images/Facebook_Placement_v1_OG_Tag.jpg" />
+    <!-- Twitter card meta tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@audible_com" />
+
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    </head>
+    <body>
+        <div  class="bc-col-responsive bc-pub-relative bc-col-2">
+            <div  class="bc-section bc-pub-relative" style="" >
+                <a class="bc-link navigation-header-logo bc-color-link" tabindex="0"  href="http://www.audible.com" aria-hidden="true">
+                    <amp-img id="" class="bc-pub-block bc-pub-block ui-it-header-logo bc-lazy-load" src="https://m.media-amazon.com/images/G/01/audibleweb/arya/navigation/audible_logo.2x._V517446980_.png" alt="audible, an amazon company" width="140" height="54" style="max-height:54px" title=""  />
+                </a>
+            </div>
+        </div>
+        <div id="center-1" class="slot centerSlot">  
+        </div>
+        <div id="membership-c1-widget" class="bc-box bc-spacing-small   bc-palette-inverse"  >           
+            <div class="bc-box-padding-none  bc-color-secondary bc-pub-clearfix" style="background: #1e2d34;" >
+            <div class="dlp-hero">
+                <div class="dlp-hero-contain">
+                    <div class="hero-img">
+                        <amp-img id="" class="" src="https://m.media-amazon.com/images/G/01/Audible/en_US/Theater_FullBleedHero_Desktop_1600x350._CB1529510675_.jpg" layout="responsive" width="300" height="100" alt="Audible Theater: The Next Stage of Storytelling"  />
+                    </div>
+                    <div class="hero-content full-height">                    
+                        <div id="" class="bc-row bc-container dlp-v-center bc-color-base"  style="">
+                            <div   class="bc-col bc-text-center bc-col-12">
+                                <div id="" class="bc-row bc-spacing-none"  style="">
+                                    <h1  class="bc-heading bc-color-base bc-size-extra-large bc-text-bold" ></h1>
+                                    <div id="" class="bc-row   bc-spacing-top-micro"  style="">
+                                        <span class="bc-text    bc-size-medium     bc-color-secondary"  >
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="" class="bc-row    bc-spacing-top-micro"  style="">
+                                    <span class="bc-text    bc-size-mini     bc-color-secondary"  ></span>
+                                </div>
+                                <div id="" class="bc-row    bc-spacing-top-small"  style="">
+                                    <span class="bc-text    bc-size-mini     bc-color-secondary"  >
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="" class="bc-box"  style="">  
+            <amp-carousel id="maincarousel" width="300" height="125" layout="responsive"  type="slides" controls>
+                <a  href="https://www.audible.com/pd/Have-a-Nice-Day-Audiobook/B07GXSPKSR" >
+                        <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_CA/Rooftop/CO-642_HaveaNiceDay_Zing_1000x350._CB1542757909_.jpg" alt="Have a Nice Day with Annette Bening, Billy Crystal, and Kevin Kline"layout="responsive" width="300" height="125">
+                        </amp-img>
+                </a>
+                <a href="https://www.audible.com/pd/Stories-by-Heart-Audiobook/B07DKR9QK4" >
+                        <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_US/Theater_SBH_Zing_Desktop_1000x350._CB1528915445_.jpg" alt="John Lithgow - Stories by Heart" layout="responsive"  width="300" height="125">
+                        </amp-img>  
+                </a>  
+                <a href="https://www.audible.com/pd/Girls-Boys-Audiobook/B07DL1VSHB" >
+                    <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/Theater_GNB_Zing_Desktop_1000x350_V2._CB1530043445_.jpg" alt="Carey Mulligan Girls and Boys" layout="responsive"  width="300" height="125">
+                    </amp-img>
+                </a>
+                <a href="https://www.audible.com/pd/Mala-Audiobook/B07M7L86K7" >
+                    <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_CA/Rooftop/CO-665_Mala_ZingDT_1000x350_CB1548780534_._CB1549317411_.jpg" alt="Melinda Lopez performs her irreverant play" layout="responsive"  width="300" height="125">
+                    </amp-img>
+                </a>
+                <a href="https://www.audible.com/pd/On-the-Exhale-Audiobook/B07K7SL752">
+                    <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/CO-642_OntheExhale_ZingDT_1000x350._CB1542214396_.jpg" alt="On the Exhale by Martin Zimmerman" layout="responsive"  width="300" height="125">
+                    </amp-img>
+                </a>
+                <a href="https://www.audible.com/pd/Feeding-the-Dragon-Audiobook/B07DQR8X3R">
+                    <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/TM-60_FeedingtheDragon_Zing_1000x350._CB1536248009_.jpg" alt="Feeding the Drag - Sharon Washington" layout="responsive"  width="300" height="125">
+                    </amp-img>
+                </a>
+            </amp-carousel>
+    </div>
+    <div id="" class="bc-row"  style="">
+        <div   class="bc-col">
+            <h2  class="bc-heading bc-color-base bc-spacing-small bc-text-bold" >
+                What Does Audible Theater Sound Like?
+            </h2>
+        </div>  
+    </div>
+    <div class="bc-box-padding-none bc-color-secondary audio-snippet-widget bc-color-background-base"  >    <div  class="bc-section playback-area bc-pub-float-left" style="" >        
+            <div id="playback-0" style="background: linear-gradient(90deg, #1A1C1D 0%, rgba(26,28,29,.4)), linear-gradient(360deg, #1A1C1D 0%, rgba(26,28,29,.1)), 
+                    url(https://m.media-amazon.com/images/G/01/Audible/en_US/Theater-Audio-player-628x284.jpg) center / cover;" class="bc-box bc-box-padding-base bc-color-background-base playback-area-layer bc-pub-block"  >
+                <div id="" class="bc-row-responsive  bc-spacing-medium"   style="">
+                    <a  href="https://www.audible.com/pd/Girls-Boys-Audiobook/B07DL1VSHB">
+                        <div   class="bc-col-responsive bc-col-3">
+                            <amp-img id="" class="" src="https://m.media-amazon.com/images/I/51m4uYkk7kL._SL150_.jpg" alt="Girls & Boys" height="83px" width="auto" />
+                        </div>
+                    </a>
+                    <div   class="bc-col-responsive bc-col-9 bc-palette-inverse">
+                        <span>
+                            <ul  class="bc-list title-container  bc-list-nostyle">
+                                <li class="bc-list-item" >
+                                    <a class="bc-link  bc-color-link  bc-text-ellipses" tabindex="0"  href="https://www.audible.com/pd/Girls-Boys-Audiobook/B07DL1VSHB">
+                                            <span class="bc-text bc-size-base"  >Girls & Boys</span></a>
+                                </li>
+                                <li class="bc-list-item" >
+                                    <span class="bc-text  bc-size-small   bc-color-secondary     bc-text-ellipses"  >
+                                        <a class="bc-link bc-color-link" tabindex="0"  href="https://www.audible.com/search?searchAuthor=Dennis+Kelly&ref=a_ep_theater_c5_suffix_1&pf_rd_p=36d3bca9-a472-4956-b92a-9b0523704458&pf_rd_r=FZHTCXEP64TEBFBTR5ET&">By: Dennis Kelly</a>
+                                        </span>
+                                </li>
+                                <li class="bc-list-item" >
+                                    <span class="bc-text  bc-size-small  bc-color-secondary  bc-text-ellipses"  >
+                                        <a class="bc-link bc-color-link" tabindex="0"  href="https://www.audible.com/search?searchNarrator=Carey+Mulligan">Narrated by: Carey Mulligan</a>
+                                        </span>
+                                </li>
+                            </ul>
+                        </span>      
+                    </div>
+                </div>
+                <div id="" class="bc-row-responsive snippet-context multiline-truncate  bc-spacing-medium bc-palette-inverse"   style="">
+                    <div   class="bc-col-responsive">
+                        <span class="bc-text bc-size-large bc-color-base"  >"They are fighting every instinct in their bodies..."</span>
+                    </div>
+                </div>  
+            </div>
+            <amp-audio
+                src="https://m.media-amazon.com/images/G/01/Audible/en_US/GirlsBoys_Excerpt_062618._CB1530034872_.mp3"
+                artwork="https://storage.googleapis.com/media-session/sintel/artwork-512.png"
+                title="Girls and Boys"
+                artist="Carey Mulligan"
+                height="40"
+                width="auto"
+                controls>
+                <div fallback>Your browser doesn’t support HTML5 audio</div>
+            </amp-audio>
+            <div>
+            <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+                <div class="bc-text bc-size-mini bc-text-secondary bc-color-base bc-text-bold bc-text-capitalize  bc-text-emphasis bc-text-ellipses bc-text-letterspace">Audible Theater</div>
+                <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+                    <amp-fx-flying-carpet height="230px">
+                        <div id="" class="bc-row-responsive collection-card-header-fixed-height bc-spacing-top-base bc-spacing-base bc-text-center"   style="">             
+                            <div class="bc-col-responsive bc-col-12">
+                                <div class="bc-col-responsive" >
+                                    <span class="bc-text bc-size-mini bc-text-secondary bc-color-base bc-text-bold bc-text-capitalize bc-text-emphasis bc-text-ellipses bc-text-letterspace"  >NEW VOICES
+                                    </span>  
+                                </div>
+                                <div class="bc-col-responsive bc-col-2 bc-col-offset-5 imm-padding">
+                                    <div class="bc-divider bc-divider-base"></div>
+                                </div>
+                            </div>
+                            <h3  class="bc-heading bc-color-base bc-spacing-mini bc-text-secondary bc-text-bold imm-padding" >Support New Artists</h3>        
+                            <span class="bc-size-small bc-text-secondary bc-color-base"  >
+                                <div class="imm-center" style="margin-left: 10px; margin-right: 10px">
+                                    <div class="imm-inline-block" >
+                                    We're supporting new work from artists around the globe through the emerging playwrights fund
+                                    </div>
+                                </div>
+                            </span>
+                            <br></br>
+                            <a href="https://www.audible.com/ep/theater-emerging-playwrights" aria-labelledby="theater emerging playwrights" aria-hidden="true"><amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_US/Theater_ColCard_Playwright.jpg" width="165" height="165" alt="Support New Artists"></amp-img></a>
+                        </div>
+                    </amp-fx-flying-carpet>
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+    <div class="bc-text bc-size-mini bc-text-secondary bc-color-base bc-text-bold bc-text-capitalize
+        bc-text-emphasis bc-text-ellipses bc-text-letterspace">Audible Theater</div>
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+    </div>
+    <div id="" class="bc-row-responsive bc-spacing-small"   style="">
+    <div  class="bc-col-responsive">
+        <h2  class="bc-heading bc-color-base bc-text-bold" >Behind the Scenes</h2>
+            <span class="bc-text bc-size-base bc-color-secondary"  >Meet the people who are creating Audible Theater's powerful stories.</span>
+    </div>  
+    </div>
+    <amp-video src="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/TheaterSizzle_V1.mp4"
+        poster="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/Video_Compilation_Still.png"
+        artwork="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/Video_Compilation_Still.png"
+        title="Behind the Scenes"
+        artist="John Lithgow"
+        width="720"
+        height="405"
+        layout="responsive"
+        controls>
+    </amp-video>    
+    <a href="https://www.audible.com/ep/audible-theater" aria-labelledby="Audible Theater" aria-hidden="true">   
+        <amp-img src="https://m.media-amazon.com/images/G/01/Audible/en_US/Theater_BecomeAPW_Banner_DT.jpg" width="566" layout="responsive" height="120" alt="The Future of Theater: Is it You?">
+        </amp-img>
+    </a>
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+    <div class="bc-text bc-size-mini bc-text-secondary bc-color-base bc-text-bold bc-text-capitalize
+        bc-text-emphasis bc-text-ellipses bc-text-letterspace">Audible Theater</div>
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+    <amp-fx-flying-carpet height="230px">
+    <div id="" class="bc-row-responsive collection-card-header-fixed-height bc-spacing-top-base bc-spacing-base bc-text-center bc-col-12 "   style="">  
+        <div class="bc-col-responsive bc-col-12 imm-inline-block">
+            <div class="bc-col-responsive">
+                <span class="bc-text bc-size-mini bc-text-secondary bc-color-base bc-text-bold bc-text-capitalize bc-text-emphasis bc-text-ellipses bc-text-letterspace"  >LISTEN NOW
+                </span>  
+            </div>
+            <div class="bc-col-responsive bc-col-2 bc-col-offset-5 imm-padding">
+                <div class="bc-divider bc-divider-base">
+                </div>
+            </div>
+        </div>
+        <h3  class="bc-heading bc-color-base bc-spacing-mini bc-text-secondary bc-text-bold imm-padding" >
+                                   Hear Something New
+        </h3>
+        <span class="bc-size-small bc-text-secondary bc-color-base"  >
+        <div class="imm-center" style="margin-left: 10px; margin-right: 10px;">
+            <div class="imm-inline-block" >
+                We're bringing acclaimed plays and productions from renowned actors and playwrights directly to your device.
+            </div>
+        </div>
+        </span>   
+        <br></br>
+        <a href="https://www.audible.com/ep/theater-listen-now" aria-labelledby="theater listen now" aria-hidden="true">
+            <amp-img src="https://m.media-amazon.com/images/I/61QreZVo+nL._SL240_.jpg" alt="Billy Crudup in Harry Clarke" width="165" height="165">              
+        </amp-img>
+        </a>    
+    </div>
+    </amp-fx-flying-carpet>     
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+    <div class="bc-text bc-size-mini bc-text-secondary bc-color-base bc-text-bold bc-text-capitalize
+        bc-text-emphasis bc-text-ellipses bc-text-letterspace">Audible Theater</div>
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div> 
+        <span>        
+            <a href="https://www.audible.com/ep/theater-listen-now" aria-labelledby="theater listen now" aria-hidden="true">
+                <amp-img id="" class="bc-pub-block" src="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/site/ADBLCRE-4260_ContentFirst_HowWorks_180K._CB316087670_.jpg" alt="Try Audible: First 30 days are free. $14.95 per month thereafter.Start with a free book: Choose from 180k titles including new releases and best sellers.            Get the free app: Transform household chores, your commute, or your workout into book time.           Enmp-joy membership benefits: Includes 1 audiobook a month. PLUS 30% off additional book.            We're here to help 24/7. Contact us anytime at (888) 283-5051." 
+                width="400"  height="230" layout="responsive" > 
+                </amp-img>  
+            </a>
+            <amp-img id="" src="https://m.media-amazon.com/images/G/01/Audible/en_US/images/creative/zing/ADBLCRE-4260_ContentFirst_WhyAudiobooks_Rev_1._CB316095108_.jpg" alt="Enjoy books in a whole new way: Great narrators make a story come alive.
+                                    Be more productive: Transform your commute, workout, or chores into listening times.
+                                    Listen anytime, anyplace: Listen with the free Audible app on your smartphone or tablet.
+                                    We're here to help 24/7. Contact us anytime at (888) 283-5051." 
+                                    width="500"     
+                                    height="300" layout="responsive" title=""></amp-img>          
+
+        </span>
+    </div>
+    </div>
+    <div  class="bc-divider bc-spacing-small bc-spacing-top-base"></div>
+    <span class="bc-text bc-size-small"  >
+        <div  class="bc-section ui-it-footer-bottom-links" style="" >
+            <span class="bc-text  bc-color-secondary"  >
+                © Copyright 1997 - 2019 Audible, Inc
+            </span>
+            <span class="bc-pipe bc-letter-space-base bc-color-background-pipe-tertiary" style=""></span>
+                <a class="bc-link bc-color-base" tabindex="0"  href="/legal-terms/conditions-of-use?moduleId=201654400&ref=a_ep_theater_b1_desktop_footer_bottom_0&pf_rd_p=3c532031-447a-4ea2-87eb-986078ef852d&pf_rd_r=4WB9TRAYZBXFT4WBMSN1&">
+                    <span class="bc-text   bc-color-base"  >Conditions of Use</span>
+                </a>
+            <span class="bc-pipe bc-letter-space-base bc-color-background-pipe-tertiary" style=""></span>
+                <a class="bc-link bc-color-base" tabindex="0"  href="https://www.amazon.com/gp/help/customer/display.html/?nodeId=468496&pf_rd_p=3c532031-447a-4ea2-87eb-986078ef852d&pf_rd_r=4WB9TRAYZBXFT4WBMSN1&">
+                <span class="bc-text bc-color-base"  >Privacy Policy</span>
+            </a>   
+        </div>
+    </span>
+    </body>
+</html>
