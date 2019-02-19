@@ -1,5 +1,4 @@
 # testamp
-test amp page 
 From the AMP documentation: Accelerated Mobile Pages (AMP) is an open-source library that provides a straightforward way to create web pages that are compelling, smooth, and load near instantaneously for users. AMP pages are just web pages that you can link to and are controlled by you. It provides higher engagement and performance on mobile devices.   It can also be used to revisit the CSS and JS we use on the page and remove extraneous code. AMP pages have also been ask of our Marketing partners.
 
 Create an AMP page for an Audible page that is anon (no customer data being shared).   The page we will be working on is an AMP version of https://www.audible.com/ep/theater   The aim is to 
